@@ -1,205 +1,123 @@
-```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>วิทยาลัยเทคนิคสว่าง</title>
-
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Tahoma;
-        }
-
-        body{
-            background: #f4f4f4;
-        }
-
-        header{
-            background: #0066cc;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav{
-            background: #004999;
-            padding: 12px;
-            text-align: center;
-        }
-
-        nav a{
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-
-        nav a:hover{
-            color: yellow;
-        }
-
-        section{
-            padding: 40px;
-            background: white;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-
-        h2{
-            color: #0066cc;
-            margin-bottom: 15px;
-        }
-
-        ul{
-            margin-left: 20px;
-        }
-
-        footer{
-            background: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-        .team-table{
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .team-table th,
-        .team-table td{
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .team-table th{
-            background: #0066cc;
-            color: white;
-        }
-
-    </style>
-
+    
+    <!-- นำเข้าฟอนต์ Sarabun -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- เชื่อมต่อไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>เว็บไซต์แนะนำวิทยาลัยเทคนิคสว่าง</h1>
-        <p>ประชาสัมพันธ์ข้อมูล ข่าวสาร และกิจกรรมของวิทยาลัย</p>
+        <div id="header-content">
+            <h1>วิทยาลัยเทคนิคสว่าง</h1>
+            <p>มุ่งมั่นพัฒนาทักษะวิชาชีพ สู่มาตรฐานสากล</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">หน้าแรก</a>
-        <a href="#">ประวัติวิทยาลัย</a>
-        <a href="#">หลักสูตร / แผนกวิชา</a>
-        <a href="#">ข่าวประชาสัมพันธ์</a>
-        <a href="#">กิจกรรม</a>
-        <a href="#">ติดต่อเรา</a>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#">หน้าแรก</a>
+            <a href="#">ประวัติวิทยาลัย</a>
+            <a href="#">แผนกวิชา</a>
+            <a href="#">ข่าวสาร</a>
+            <a href="#">กิจกรรม</a>
+            <a href="#">ติดต่อเรา</a>
+        </div>
     </nav>
 
-    <section>
-        <h2>วัตถุประสงค์ของเว็บไซต์</h2>
-        <ul>
-            <li>เพื่อประชาสัมพันธ์วิทยาลัยเทคนิคสว่าง</li>
-            <li>เพื่อให้ข้อมูลเกี่ยวกับแผนกวิชาและหลักสูตร</li>
-            <li>เพื่อเผยแพร่ข่าวสารและกิจกรรมของวิทยาลัย</li>
-            <li>เพื่อให้ผู้สนใจสามารถติดต่อวิทยาลัยได้สะดวก</li>
-        </ul>
-    </section>
+    <div class="container">
+        
+        <section class="fade-in">
+            <h2>วัตถุประสงค์ของเว็บไซต์</h2>
+            <ul class="feature-list">
+                <li>เพื่อประชาสัมพันธ์วิทยาลัยเทคนิคสว่าง</li>
+                <li>เพื่อให้ข้อมูลเกี่ยวกับแผนกวิชาและหลักสูตร</li>
+                <li>เพื่อเผยแพร่ข่าวสารและกิจกรรมของวิทยาลัย</li>
+                <li>เพื่อให้ผู้สนใจสามารถติดต่อวิทยาลัยได้สะดวก</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>ผู้ใช้งานเว็บไซต์</h2>
-        <ul>
-            <li>นักเรียนและนักศึกษา</li>
-            <li>ผู้ปกครอง</li>
-            <li>ครูและบุคลากร</li>
-            <li>ผู้ที่สนใจสมัครเรียน</li>
-            <li>บุคคลทั่วไป</li>
-        </ul>
-    </section>
+        <section class="fade-in">
+            <h2>ผู้ใช้งานเป้าหมาย</h2>
+            <ul class="feature-list">
+                <li>นักเรียนและนักศึกษา</li>
+                <li>ผู้ปกครอง</li>
+                <li>ครูและบุคลากร</li>
+                <li>ผู้ที่สนใจสมัครเรียน</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>เมนูภายในเว็บไซต์</h2>
-        <ul>
-            <li>หน้าแรก</li>
-            <li>ประวัติวิทยาลัย</li>
-            <li>แผนกวิชา</li>
-            <li>ข่าวประชาสัมพันธ์</li>
-            <li>กิจกรรม</li>
-            <li>ติดต่อเรา</li>
-        </ul>
-    </section>
+        <section class="fade-in">
+            <h2>ทีมงานพัฒนาเว็บไซต์</h2>
+            <div class="table-responsive">
+                <table class="team-table">
+                    <thead>
+                        <tr>
+                            <th>ชื่อสมาชิก</th>
+                            <th>ตำแหน่ง</th>
+                            <th>หน้าที่ความรับผิดชอบ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>นาย บวรวิทย์</td>
+                            <td><span class="role-badge">Front-end Developer</span></td>
+                            <td>ออกแบบและพัฒนาเว็บไซต์ส่วนหน้า (UI)</td>
+                        </tr>
+                        <tr>
+                            <td>น.ส.รัชนีภรณ์</td>
+                            <td><span class="role-badge">Back-end Developer</span></td>
+                            <td>ดูแลระบบฐานข้อมูลและประมวลผลหลังบ้าน</td>
+                        </tr>
+                        <tr>
+                            <td>น.ส.นันทิตา</td>
+                            <td><span class="role-badge">UI Designer</span></td>
+                            <td>ออกแบบประสบการณ์ผู้ใช้และโครงสร้างเว็บ</td>
+                        </tr>
+                        <tr>
+                            <td>น.ส.สิริภัสสรณ์</td>
+                            <td><span class="role-badge">QA Tester</span></td>
+                            <td>ตรวจสอบคุณภาพและทดสอบข้อผิดพลาด</td>
+                        </tr>
+                        <tr>
+                            <td>น.ส.กิตติกา- น.ส.สุริภา</td>
+                            <td><span class="role-badge">Scrum Master</span></td>
+                            <td>บริหารโครงการและประสานงานทีม Agile</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <section>
-        <h2>ทีมงานพัฒนาเว็บไซต์</h2>
+        <section class="fade-in">
+            <h2>กระบวนการทำงาน (Agile Methodology)</h2>
+            <div class="agile-grid">
+                <div class="agile-card">
+                    <strong>Iterative</strong><br>แบ่งงานเป็นส่วนย่อย
+                </div>
+                <div class="agile-card">
+                    <strong>Sprint</strong><br>ทำงานเป็นรอบที่ชัดเจน
+                </div>
+                <div class="agile-card">
+                    <strong>Daily Sync</strong><br>ประชุมติดตามงานทุกวัน
+                </div>
+            </div>
+        </section>
 
-        <table class="team-table">
-
-            <tr>
-                <th>ชื่อสมาชิก</th>
-                <th>ตำแหน่ง</th>
-                <th>หน้าที่</th>
-            </tr>
-
-            <tr>
-                <td>น.ส.กิตติกา</td>
-                <td>Front-end Developer</td>
-                <td>ออกแบบและพัฒนาเว็บไซต์ส่วนหน้า</td>
-            </tr>
-
-            <tr>
-                <td>น.ส.รัชนีภรณ์</td>
-                <td>Back-end Developer</td>
-                <td>ดูแลระบบฐานข้อมูลและระบบหลังบ้าน</td>
-            </tr>
-
-            <tr>
-                <td>น.ส.นันทิตา</td>
-                <td>UI Designer</td>
-                <td>ออกแบบหน้าตาเว็บไซต์และโครงสร้าง</td>
-            </tr>
-
-            <tr>
-                <td>น.ส.สิริภัสสรณ์</td>
-                <td>Tester</td>
-                <td>ทดสอบเว็บไซต์และตรวจสอบข้อผิดพลาด</td>
-            </tr>
-
-            <tr>
-                <td>น.ส.วิไลวรรณ - น.ส.สุริภา</td>
-                <td>Scrum Master</td>
-                <td>วางแผน ติดตามงาน และประสานงานภายในทีม</td>
-            </tr>
-
-        </table>
-
-    </section>
-
-    <section>
-        <h2>การทำงานแบบ Agile</h2>
-
-        <ul>
-            <li>แบ่งงานเป็นส่วนย่อย</li>
-            <li>ทำงานเป็นรอบ (Sprint)</li>
-            <li>ประชุมติดตามงานสั้น ๆ ทุกวัน</li>
-            <li>ปรับปรุงงานตามความคิดเห็นของทีม</li>
-        </ul>
-
-    </section>
+    </div>
 
     <footer>
-        <p>© 2026 วิทยาลัยเทคนิคสว่าง</p>
+        <p>&copy; 2026 วิทยาลัยเทคนิคสว่าง | พัฒนาโดยทีมนักศึกษาฝึกประสบการณ์</p>
     </footer>
+
+    <!-- เชื่อมต่อไฟล์ JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
-```
